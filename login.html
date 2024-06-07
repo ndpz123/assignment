@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAKER</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #wp-products {
+            max-width: 400px;
+            width: 1000px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            margin: auto;
+        }
+
+
+        #wp-products h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #login-form label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        #login-form input[type="text"],
+        #login-form input[type="password"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        #login-form input[type="text"]:focus,
+        #login-form input[type="password"]:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        #login-form button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #login-form button:hover {
+            background-color: #0056b3;
+        }
+
+        #login-form label,
+        #login-form input,
+        #login-form button {
+            width: 100%;
+        }
+
+        #login-form input::placeholder {
+            color: #aaa;
+        }
+
+        @media (max-width: 480px) {
+            #wp-products {
+                padding: 10px;
+            }
+
+            #login-form button {
+                padding: 12px;
+            }
+        }
+
+        #banner {
+            display: flex;
+            background-image: url("https://img.cdn-pictorem.com/uploads/collection/S/SO5PKP9NEK/900_Row-One-Brand_1985-nike-air-jordan-ad-final-row-1.jpg");
+            background-size: cover; 
+            background-position: center; 
+            justify-content: center;
+            align-items: center;
+            height: 110vh; 
+        }
+
+
+
+        .box-left {
+            display: none; 
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="https://1000logos.net/wp-content/uploads/2023/11/StockX-Logo.jpg" alt="" width="100px">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="index.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="https://www.facebook.com/stussy6868">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="https://www.facebook.com/stussy6868">Liên hệ</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" alt="" width="25px">
+                </div>
+                <div class="item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="" width="25px">
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="box-left">
+                <h2>
+                    <span>SNEAKER</span>
+                    <br>
+                    <span>NEW ARRIVALS</span>
+                </h2>
+                <button>Mua ngay</button>
+            </div>
+            <div id="wp-products">
+                <h2>ĐĂNG NHẬP</h2>
+                <form id="login-form">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required>
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+                    <button type="submit">Đăng nhập</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Stockx_logo.png" alt="" width="200px">
+                </div>
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="quick-menu">
+                    <div class="item">
+                        <a href="index.html">Trang chủ</a>
+                    </div>
+                    <div class="item">
+                        <a href="index.html">Sản phẩm</a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.facebook.com/stussy6868/">Blog</a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.facebook.com/stussy6868/">Liên hệ</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <form action="">
+                    <input type="text" placeholder="Địa chỉ email">
+                    <button>Nhận tin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === 'toandt2005' && password === 'thienthan728') {
+                alert('Đăng nhập thành công!');
+                window.location.href = 'index.html'; // Redirect to index.html
+            } else {
+                alert('Tên đăng nhập hoặc mật khẩu không đúng.');
+            }
+        });
+    </script>
+</body>
+
+</html>
