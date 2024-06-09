@@ -10,7 +10,7 @@
     <style>
         #wp-products {
             max-width: 400px;
-            width: 1000px;
+            width: 100%;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
@@ -20,26 +20,26 @@
             margin: auto;
         }
 
-
         #wp-products h2 {
             text-align: center;
             color: #333;
             margin-bottom: 20px;
         }
 
-        #login-form {
+        .form-container {
             display: flex;
             flex-direction: column;
         }
 
-        #login-form label {
+        .form-container label {
             margin-bottom: 8px;
             font-weight: bold;
             color: #555;
         }
 
-        #login-form input[type="text"],
-        #login-form input[type="password"] {
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="email"] {
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
@@ -49,13 +49,14 @@
             transition: border-color 0.3s ease-in-out;
         }
 
-        #login-form input[type="text"]:focus,
-        #login-form input[type="password"]:focus {
+        .form-container input[type="text"]:focus,
+        .form-container input[type="password"]:focus,
+        .form-container input[type="email"]:focus {
             border-color: #007BFF;
             outline: none;
         }
 
-        #login-form button {
+        .form-container button {
             padding: 10px;
             background-color: #007BFF;
             color: white;
@@ -66,17 +67,17 @@
             transition: background-color 0.3s ease-in-out;
         }
 
-        #login-form button:hover {
+        .form-container button:hover {
             background-color: #0056b3;
         }
 
-        #login-form label,
-        #login-form input,
-        #login-form button {
+        .form-container label,
+        .form-container input,
+        .form-container button {
             width: 100%;
         }
 
-        #login-form input::placeholder {
+        .form-container input::placeholder {
             color: #aaa;
         }
 
@@ -85,7 +86,7 @@
                 padding: 10px;
             }
 
-            #login-form button {
+            .form-container button {
                 padding: 12px;
             }
         }
@@ -93,21 +94,20 @@
         #banner {
             display: flex;
             background-image: url("https://img.cdn-pictorem.com/uploads/collection/S/SO5PKP9NEK/900_Row-One-Brand_1985-nike-air-jordan-ad-final-row-1.jpg");
-            background-size: cover; 
-            background-position: center; 
+            background-size: cover;
+            background-position: center;
             justify-content: center;
             align-items: center;
-            height: 110vh; 
+            height: 110vh;
         }
-
-
 
         .box-left {
-            display: none; 
+            display: none;
         }
-        .sign-up{
+
+        .sign-up {
             color: black;
-        text-decoration: underline;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -151,16 +151,15 @@
                 <button>Mua ngay</button>
             </div>
             <div id="wp-products">
-                <h2>ĐĂNG NHẬP</h2>
-                <form id="login-form">
+                <h2>ĐĂNG KÝ</h2>
+                <form id="signup-form" class="form-container">
                     <label for="username">Tên đăng nhập</label>
                     <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required>
                     <label for="password">Mật khẩu</label>
                     <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
-                    <button type="submit">Đăng nhập</button>
-                    <a href="signup.html">
-                        <div class="sign-up">Chưa có tài khoản?</div>
-                    </a>    
+                    <label for="confirm-password">Nhập lại mật khẩu</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Nhập lại mật khẩu" required>
+                    <button type="submit">Đăng ký</button>
                 </form>
             </div>
         </div>
@@ -197,16 +196,18 @@
         </div>
     </div>
     <script>
-        document.getElementById('login-form').addEventListener('submit', function(event) {
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the form from submitting the traditional way
+
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
 
-            if (username === 'toandt2005' && password === 'thienthan728') {
-                alert('Đăng nhập thành công!');
+            if (password === confirmPassword) {
+                alert('Đăng ký thành công!');
                 window.location.href = 'index.html'; // Redirect to index.html
             } else {
-                alert('Tên đăng nhập hoặc mật khẩu không đúng.');
+                alert('Mật khẩu không khớp. Vui lòng thử lại.');
             }
         });
     </script>

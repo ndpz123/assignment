@@ -43,20 +43,6 @@
     margin-left:22px;
 }
 
-
-
-
-
-#banner {
-    width: 100%;
-    background-image :url("https://i.ytimg.com/vi/F9l56fOYfQ4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgLSh_MA8=&rs=AOn4CLCq9Cc891tQmN5kN96CtT2-dToR8g");
-    height: 720px;
-    margin-top:40px;
-    display: flex;
-    padding:0px 133px;
-    position:relative;
-}
-
 #banner .box-left ,#banner .box-right {
     width: 50%;
 }
@@ -504,4 +490,36 @@
     margin-left: 57vh;
     margin-top: -3vh;
     color: red;
+}
+.item {
+    position: relative;
+    padding: 10px;
+
+}
+
+.item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.item .dropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 150px;
+}
+
+
+
+.item .dropdown .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.item:hover .dropdown {
+    display: block;
 }

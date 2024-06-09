@@ -8,7 +8,17 @@
     <title>SNEAKER</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
+<style>
+    #banner {
+    width: 100%;
+    background-image :url("https://i.ytimg.com/vi/F9l56fOYfQ4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgLSh_MA8=&rs=AOn4CLCq9Cc891tQmN5kN96CtT2-dToR8g");
+    height: 520px;
+    margin-top:40px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+</style>
 <body>
     <div id="wrapper">
         <div id="header">
@@ -17,10 +27,16 @@
             </a>
             <div id="menu">
                 <div class="item">
-                    <a href="">Trang chủ</a>
+                    <a href="index.html">Trang chủ</a>
                 </div>
                 <div class="item">
                     <a href="">Sản phẩm</a>
+                    <div class="dropdown">
+                        <a href="shop1.html" class="dropdown-item">Air Jordan 1</a>
+                        <a href="shop2.html" class="dropdown-item">Air Jordan 4</a>
+                        <a href="shop4.html" class="dropdown-item">Air Jordan 5</a>
+                        <a href="shop3.html" class="dropdown-item">Nike SB Dunk Low</a>
+                    </div>
                 </div>
                 <div class="item">
                     <a href="https://www.facebook.com/stussy6868/">Blog</a>
@@ -54,33 +70,24 @@
                 </h2>
                 <button>Mua ngay</button>
             </div>
-            <div class="box-right">
-                <img src="assets/img_1.png" alt="">
-                <img src="assets/img_2.png" alt="">
-                <img src="assets/img_3.png" alt="">
-            </div>
-            <div class="to-bottom">
-                <a href="">
-                </a>
-            </div>
         </div>
         <div id="wp-products">
-            <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+            <h2>SẢN PHẨM PHỔ MỚI NHẤT</h2>
             <ul id="list-products">
                 <div class="item">
-                    <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-Chicago-2015-Product_V2.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1690294552" alt="" width="300px" data-name="Jordan 1 Retro Chicago (2015)" data-price="12.000.000đ">
-                    <div class="name">Jordan 1 Retro Chicago (2015)</div>
-                    <div class="price">12.000.000đ</div>
+                    <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Reverse-Mocha_V2-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1659033979" alt="" width="300px" data-name="Jordan 1 Retro Chicago (2015)" data-price="12.000.000đ">
+                    <div class="name">Jordan 1 Retro Low OG SP Travis Scott Reverse Mocha</div>
+                    <div class="price">22.000.000đ</div>
                 </div>
                 <div class="item">
-                    <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-Dark-Mocha-2-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1616187367&q=60" alt="" width="300px" data-name="Jordan 1 Retro High Dark Mocha" data-price="8.000.000đ">
-                    <div class="name">Jordan 1 Retro High Dark Mocha</div>
-                    <div class="price">8.000.000đ</div>
+                    <img src=https://images.stockx.com/images/BAPE-Color-Camo-Shark-Full-Zip-Hoodie-FW21-Red.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1701718473&updated_at=1616187367&q=60" alt="" width="300px" data-name="Jordan 1 Retro High Dark Mocha" data-price="8.000.000đ">
+                    <div class="name">BAPE Color Camo Shark Full Zip Hoodie Red</div>
+                    <div class="price">8.500.000đ</div>
                 </div>
                 <div class="item">
-                    <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-Travis-Scott-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1608736403" alt="" width="300px" data-name="Jordan 1 Retro High OG SP Travis Scott" data-price="31.000.000đ">
-                    <div class="name">Jordan 1 Retro High OG SP Travis Scott</div>
-                    <div class="price">31.000.000đ</div>
+                    <img src="https://images.stockx.com/images/BAPE-Marbling-By-Bathing-Ape-Tee-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1689620142&q=60" alt="" width="300px" data-name="Jordan 1 Retro High OG SP Travis Scott" data-price="31.000.000đ">
+                    <div class="name">BAPE Marbling By Bathing Ape Tee Black</div>
+                    <div class="price">2.100.000đ</div>
                 </div>
                 <div class="item">
                     <img src="https://images.stockx.com/images/Air-Jordan-1-SB-Lakers-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1607649923" alt="" width="300px" data-name="Jordan 1 Retro High OG Defiant SB LA to Chicago" data-price="11.000.000đ">
@@ -88,17 +95,32 @@
                     <div class="price">11.000.000đ</div>
                 </div>
                 <div class="item">
-                    <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-Union-Los-Angeles-Black-Toe-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1645549885&q=60" alt="" width="300px" data-name="Jordan 1 Retro High Union Los Angeles Black Toe" data-price="18.000.000đ">
-                    <div class="name">Jordan 1 Retro High Union Los Angeles Black Toe</div>
+                    <img src="https://images.stockx.com/images/OFF-WHITE-Mona-Lisa-T-Shirt-Black.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1617832931?height=78&width=78" alt="" width="300px" data-name="Jordan 1 Retro High Union Los Angeles Black Toe" data-price="18.000.000đ">
+                    <div class="name">OFF-WHITE Mona Lisa Oversized T-shirt Black</div>
                     <div class="price">18.000.000đ</div>
                 </div>
                 <div class="item">
-                    <img src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-Bred-Toe-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1606322598&q=60" alt="" width="300px" data-name="Jordan 1 Retro High Bred Toe" data-price="9.000.000đ">
-                    <div class="name">Jordan 1 Retro High Bred Toe</div>
-                    <div class="price">9.000.000đ</div>
+                    <img src="https://images.stockx.com/images/OFF-WHITE-14-Jitney-Bag-CASH-INSIDE-Off-White-Black.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&trimcolor=ffffff&updated_at=1610563725" alt="" width="300px" data-name="Jordan 1 Retro High Bred Toe" data-price="9.000.000đ">
+                    <div class="name">OFF-WHITE 1.4 Jitney Bag "CASH INSIDE" Off White</div>
+                    <div class="price">17.000.000đ</div>
+                </div>
+                <div class="item">
+                    <img src="https://images.stockx.com/images/Supreme-Box-Logo-Tee-FW23-Navy.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1702569898" alt="" width="300px" data-name="Jordan 1 Retro High Bred Toe" data-price="9.000.000đ">
+                    <div class="name">Supreme Box Logo Tee (FW23) Navy</div>
+                    <div class="price">1.200.000đ</div>
+                </div>
+                <div class="item">
+                    <img src="https://images.stockx.com/images/Supreme-World-Famous-Box-Logo-New-Era-Red.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1614789508" alt="" width="300px" data-name="Jordan 1 Retro High Bred Toe" data-price="9.000.000đ">
+                    <div class="name">Supreme World Famous Box Logo New Era Red</div>
+                    <div class="price">1.400.000đ</div>
+                </div>
+                <div class="item">
+                    <img src="https://images.stockx.com/images/Louis-Vuitton-Slender-Wallet-Monogram-Surfin-Navy-Blue.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&trimcolor=ffffff&updated_at=1716600971?height=78&width=78" alt="" width="300px" data-name="Jordan 1 Retro High Bred Toe" data-price="9.000.000đ">
+                    <div class="name">Louis Vuitton Slender Wallet"</div>
+                    <div class="price">15.000.000đ</div>
                 </div>
             </ul>
-            <div class="list-page">
+            <!-- <div class="list-page">
                 <div class="item">
                     <a href="index.html">1</a>
                 </div>
@@ -111,7 +133,7 @@
                 <div class="item">
                     <a href="shop4.html">4</a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div id="footer">
             <div class="box">
